@@ -7,7 +7,7 @@ from langchain_experimental.sql import SQLDatabaseChain
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-os.environ["GOOGLE_API_KEY"] = "" 
+os.environ["GOOGLE_API_KEY"] = "AIzaSyAcQbq_kBvbB3UV_1K6Stx-qbE-yihc0Bs" 
 
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
 db = SQLDatabase.from_uri("sqlite:///my_database.db")

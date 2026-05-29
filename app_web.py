@@ -8,7 +8,6 @@ st.set_page_config(page_title="AI SQL Assistant")
 st.title(" Trợ lý Phân tích Dữ liệu (Text-to-SQL)")
 st.markdown("Nhập câu hỏi bằng tiếng Việt, AI sẽ tự động truy vấn Database và trả kết quả cho bạn!")
 
-os.environ["GOOGLE_API_KEY"] = "" 
 
 # Khởi tạo model (Dùng bản 2.5 Flash của Google)
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
